@@ -2,132 +2,133 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>PlanUrSwapn</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlanUrSwapn</title>
 
-<style>
-body { margin:0; font-family:Arial; }
+<link rel="stylesheet" href="style.css">
 
-/* NAVBAR */
-.navbar {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px;
-  background:#0b2a4a;
-  color:white;
-}
-
-.navbar a {
-  color:white;
-  margin:0 10px;
-  text-decoration:none;
-}
-
-.btn {
-  background:#d4a017;
-  padding:10px 15px;
-  border:none;
-  cursor:pointer;
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(to right, #0b2a4a, #1e4c7a);
-  color:white;
-  padding:100px 40px;
-}
-
-.hero h1 {
-  font-size:40px;
-}
-
-.hero span {
-  color:#d4a017;
-}
-
-/* ABOUT */
-.about {
-  display:flex;
-  align-items:center;
-  padding:60px;
-  gap:40px;
-}
-
-.about img {
-  width:180px;
-  border-radius:50%;
-}
-
-/* SERVICES */
-.services {
-  background:#f5f5f5;
-  padding:60px;
-  text-align:center;
-}
-
-.cards {
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  margin-top:20px;
-}
-
-.card {
-  background:white;
-  padding:20px;
-  width:200px;
-  border-radius:10px;
-}
-
-/* FOOTER */
-footer {
-  background:#0b2a4a;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
-</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <header class="navbar">
-  <h2>PlanUrSwapn</h2>
-  <div>
+  <div class="logo">PlanUr<span>Swapn</span></div>
+
+  <nav>
     <a href="#">Home</a>
     <a href="#">About</a>
     <a href="#">Services</a>
-  </div>
+    <a href="#">Knowledge</a>
+    <a href="#">Contact</a>
+  </nav>
+
   <button class="btn">Free Consultation</button>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <h1>Plan Today,<br><span>Prosper Tomorrow.</span></h1>
-  <p>PlanUrSwapn helps you plan your finances and achieve your goals.</p>
+  <div class="hero-text">
+    <h1>Plan Today,<br><span>Prosper Tomorrow.</span></h1>
+    <p>PlanUrSwapn helps you plan your finances, invest wisely and achieve your life goals.</p>
+
+    <div class="hero-buttons">
+      <button class="btn">Start Planning</button>
+      <button class="btn-outline">Free Consultation</button>
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="hero.jpg" alt="">
+  </div>
 </section>
 
+<!-- ABOUT -->
 <section class="about">
   <img src="profile.jpg">
-  <div>
+
+  <div class="about-text">
+    <h3>ABOUT ME</h3>
     <h2>Hi, I’m Swapnil</h2>
-    <p>SEBI RIA Aspirant | Financial Advisor</p>
-    <p>I help individuals make smarter financial decisions.</p>
+    <p class="highlight">SEBI RIA Aspirant | Financial Advisor</p>
+
+    <p>I help individuals and families make smarter financial decisions.</p>
+    <p>My goal is to provide transparent, goal-based financial advice.</p>
+  </div>
+
+  <div class="about-features">
+    <div><i class="fas fa-user-check"></i> Client First Approach</div>
+    <div><i class="fas fa-lightbulb"></i> Simple & Clear Advice</div>
+    <div><i class="fas fa-handshake"></i> Trust & Transparency</div>
   </div>
 </section>
 
+<!-- SERVICES -->
 <section class="services">
-  <h2>Our Services</h2>
+  <h2>Smart Solutions for Your Financial Goals</h2>
+
   <div class="cards">
-    <div class="card">Mutual Fund Advisory</div>
-    <div class="card">Financial Planning</div>
-    <div class="card">Goal-based Investing</div>
+    <div class="card"><i class="fas fa-chart-line"></i><h3>Mutual Fund Advisory</h3></div>
+    <div class="card"><i class="fas fa-file-invoice"></i><h3>Financial Planning</h3></div>
+    <div class="card"><i class="fas fa-bullseye"></i><h3>Goal-based Investing</h3></div>
+    <div class="card"><i class="fas fa-seedling"></i><h3>SIP Strategy</h3></div>
   </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <h2>Guidance You Can Trust</h2>
+
+  <div class="why-box">
+    <div><i class="fas fa-user"></i><p>Personalized Advice</p></div>
+    <div><i class="fas fa-ban"></i><p>No Hidden Agenda</p></div>
+    <div><i class="fas fa-chart-line"></i><p>Long-term Approach</p></div>
+    <div><i class="fas fa-headset"></i><p>Ongoing Support</p></div>
+  </div>
+</section>
+
+<!-- KNOWLEDGE -->
+<section class="knowledge">
+  <h2>Learn. Understand. Grow.</h2>
+
+  <div class="blog-cards">
+    <div class="blog">
+      <img src="hero.jpg">
+      <p>SIP ka jadoo samjho</p>
+    </div>
+
+    <div class="blog">
+      <img src="blog2.jpg">
+      <p>Mutual Funds kaise choose karein?</p>
+    </div>
+
+    <div class="blog">
+      <img src="blog3.jpg">
+      <p>Returns vs Risk</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Let’s Plan Your Financial Future</h2>
+  <p>Reach out for a free consultation</p>
+
+  <div class="contact-info">
+    <span><i class="fab fa-whatsapp"></i> +91 93594 92884</span>
+    <span><i class="fas fa-envelope"></i> hello@planurswapn.in</span>
+  </div>
+
+  <button class="btn">Book Free Consultation</button>
 </section>
 
 <footer>
-  <p>© PlanUrSwapn</p>
+  <p>© 2026 PlanUrSwapn</p>
 </footer>
+
+<a href="https://wa.me/919359492884" class="whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
