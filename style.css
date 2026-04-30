@@ -40,19 +40,20 @@ body {
 /* HERO */
 .hero {
   display: flex;
-  padding: 60px;
-  background: #0b2a4a;
-  color: white;
+  justify-content: space-between;
   align-items: center;
+  padding: 80px;
+  background: linear-gradient(to right, #0b2a4a, #123b63);
+  color: white;
 }
 
-.hero span {
-  color: gold;
+.hero-text {
+  max-width: 50%;
 }
 
 .hero-img img {
-  width: 450px;
-  border-radius: 10px;
+  width: 500px;
+  border-radius: 15px;
 }
 
 /* ABOUT */
