@@ -38,17 +38,44 @@ body {
 }
 
 /* HERO */
+/* HERO SECTION FIX */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px;
+  padding: 100px 80px;
   background: linear-gradient(to right, #0b2a4a, #123b63);
   color: white;
 }
 
+/* LEFT SIDE */
 .hero-text {
-  max-width: 50%;
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.hero-text span {
+  color: gold;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.hero-buttons .btn {
+  margin-right: 10px;
+}
+
+/* RIGHT SIDE IMAGE */
+.hero-img {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hero-img img {
